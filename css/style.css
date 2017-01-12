@@ -1,1 +1,14 @@
-test
+/*
+selector {
+  property: value;
+}
+selector=the things you're changing
+Property=what you're doing 
+value=how much of it you're doing
+*/
+
+img {
+  height:200px;
+  width:200px;
+  border-radius:200px;
+}
