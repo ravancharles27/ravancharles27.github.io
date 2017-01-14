@@ -33,7 +33,7 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: #800080;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -44,6 +44,6 @@ li a:hover:not(.active) {
 }
 
 li a.active {
-    color: white;
+    color: #800080;
     background-color: #4CAF50;
 }
