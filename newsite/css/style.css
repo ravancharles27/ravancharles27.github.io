@@ -7,6 +7,7 @@ property: value;
 header h1 {
   color: #800080;
   font-family: Arial, san-serif; 
+  font-size: 2.5em; 
 }
 
 header {
@@ -14,5 +15,6 @@ header {
   width: 100%;
   padding: 25px;
   text-align: center;
+  background-size: cover;
 }
   
