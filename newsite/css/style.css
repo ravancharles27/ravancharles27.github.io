@@ -8,3 +8,10 @@ header h1 {
   color: #40E0D0;
 }
 
+header {
+  background: url('https://static.pexels.com/photos/6675/flight-mountains-sky-flying.jpeg');
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+}
+  
