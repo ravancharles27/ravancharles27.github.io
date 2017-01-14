@@ -28,19 +28,19 @@ ul {
 }
 
 li {
-    float: left;
+    float: center;
 }
 
 li a {
     display: block;
-    color: #666;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #ddd;
+    background-color: white;
 }
 
 li a.active {
