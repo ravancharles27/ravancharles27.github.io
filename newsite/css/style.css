@@ -18,7 +18,7 @@ header {
   background-size: cover;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,23 +27,23 @@ ul {
     background-color: #f3f3f3;
 }
 
-li {
+nav ul li {
     text-align: center;
 }
 
-li a {
-    display: block;
+nav ul li a {
+    display: inline;
     color: #800080;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: white;
+nav ul li a:hover {
+    color: purple;
 }
 
-li a.active {
+nav ul li a.active {
     color: #800080;
     background-color: #4CAF50;
 }
