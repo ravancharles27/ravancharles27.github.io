@@ -49,3 +49,19 @@ nav ul li a.active {
     color: #800080;
     background-color: #4CAF50;
 }
+
+#green {
+  background: green;
+  color: white;
+  font-family: Arial;
+  font-style: italic; 
+  font-size: 20px;
+}
+
+#blue {
+  background: blue;
+  color: white; 
+  font-family: Arial;
+  font-style: italic; 
+  font-size: 20px;
+}
