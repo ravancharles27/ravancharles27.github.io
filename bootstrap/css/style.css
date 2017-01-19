@@ -1,15 +1,18 @@
 section {
-  height: 300px;
+  height: 800px;
   color: blue;
   padding-top: 20px;
   text-align: center;
 }
 #top {
-  background: url('#')
+  background: url('#top');
+  background-size: cover;
 }
 #middle {
-  background: url('#')
+  background: url('#middle');
+  background-size: cover;
 }
 #bottom {
-  background: url('#')
+  background: url('#bottom');
+  background-size: cover;
 }
