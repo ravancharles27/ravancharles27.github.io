@@ -4,3 +4,12 @@ section {
   padding-top: 20px;
   text-align: center;
 }
+#top {
+  background: url('#')
+}
+#middle {
+  background: url('#')
+}
+#bottom {
+  background: url('#')
+}
