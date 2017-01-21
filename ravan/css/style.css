@@ -9,7 +9,7 @@
 
 * { font-family: 'Overpass', sans-serif;
 }
-header li {
+header, li {
   text-align: center;
   text-decoration: none; 
   list-style-type: none;
