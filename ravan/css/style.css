@@ -7,7 +7,9 @@
   }
 }
 
-* { font-family: 'Overpass', sans-serif;
+* { 
+  font-family: 'Overpass', sans-serif;
+  
 }
 header, li {
   text-align: center;
@@ -15,6 +17,9 @@ header, li {
   list-style-type: none;
   color: navy; 
   background-color: Salmon; 
+}
+header {
+  font-size: 2.5em;
 }
 body { 
   background-color: FloralWhite; 
