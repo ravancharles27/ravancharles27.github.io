@@ -9,3 +9,8 @@
 
 * { font-family: 'Overpass', sans-serif;
 }
+header {
+  text-align: center;
+  color: salmon; 
+  background-color: FloralWhite; 
+}
