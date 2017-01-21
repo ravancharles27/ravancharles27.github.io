@@ -26,7 +26,8 @@ body {
 }
 
 #navlist ul li {
+  list-style-type: none;
   display: inline;
   padding-right: 20px;
-  list-style-type: none;
+  
 }
