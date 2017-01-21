@@ -9,7 +9,7 @@
 
 * { font-family: 'Overpass', sans-serif;
 }
-header {
+header, nav {
   text-align: center;
   text-decoration: none; 
   color: salmon; 
