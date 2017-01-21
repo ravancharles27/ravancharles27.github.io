@@ -11,10 +11,9 @@
   font-family: 'Overpass', sans-serif;
   
 }
-header, li {
+header {
   text-align: center;
   text-decoration: none; 
-  list-style-type: none;
   color: navy; 
   background-color: Salmon; 
 }
@@ -29,4 +28,5 @@ body {
 #navlist li {
 display: inline;
 padding-right: 20px;
+list-style-type: none;
 }
