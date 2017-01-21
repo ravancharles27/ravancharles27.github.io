@@ -1,3 +1,29 @@
 * {
   font-family: 'Raleway', sans-serif;
 }
+
+section { 
+  height: 800px;
+  padding-top: 100px;
+}
+#about { 
+  background: gray;
+}
+#about img {
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+#red{
+  color: red;
+}
+
+#green {
+  color: green;
+}
+
+#about a:hover {
+  background: pink;
+}
+
