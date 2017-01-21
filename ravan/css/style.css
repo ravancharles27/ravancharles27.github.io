@@ -13,6 +13,10 @@ header, nav, ul {
   text-align: center;
   text-decoration: none; 
   list-style-type: none;
-  color: salmon; 
+  color: navy; 
+  background-color: Salmon; 
+}
+body { 
   background-color: FloralWhite; 
+  Color: black; 
 }
