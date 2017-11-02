@@ -25,8 +25,7 @@
         .column {
             display: inline-block;
             width: 100%;
-            vertical-align: top;
-            height: 20vh;
+            vertical-align: middle;
         }
     /** this is the media query for mobile**/    
         @media all and (max-width: 600px){
@@ -38,6 +37,7 @@
                     margin: auto;
                     width: 20vw;
                     height: 10vh;
+                    padding: 2vw; 
                     margin-top: 2vh;
                     
             }
@@ -48,18 +48,11 @@
                 display: none;
             }
         .column {
-            display: block;
-            text-align: center;
-            line-height: 20vh;
-            font-size: 10vh;
-            color: white;
+            display: inline-block;
+            width: 100%;
+            height: 40vh;
             }
-            .column:hover {
-                background-color: rgba(94,38,119,.5);
-            }
-            a {
-                text-decoration: none;
-            }
+           
                     
         }
         
@@ -104,22 +97,11 @@
             #mobilecol {
                 display: none;
             }
-            #maintext{
-            position: absolute;
-            text-align: center;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-        }
-            #name {
+            .column {
                 display: inline-block;
-                font-size: 75px;
-                font-weight: 900;
+                width: 50vw;
+                height: 20vh; 
             }
-             
-        #quote {
-                display: inline-block;
-                font-size: 25px;
             }
     </style>
 </head>
@@ -127,25 +109,25 @@
 <body>
     <div id="opaquelayer"></div>
     <header>
-        <div id="mobilelogo"><a href="#"><img src="ravancharleslogo.png"></a></div>
+        <div id="mobilelogo"><a href="ravancharles.html"><img src="ravancharleslogo.png"></a></div>
         <div id="desktoplogo"><a href="#"><img src="ravancharleslogo.png"></a></div>
             <nav >
-                <div id="navigation">
+               <div id="navigation">
                     <a href="ravancharles-about.html" target="_blank">About</a>&nbsp;&nbsp; <a href="ravancharles-portfolio.html" target="_blank">Portfolio</a> &nbsp;&nbsp;<a href="ravancharles-resume.html" target="_blank">Resume</a> &nbsp;&nbsp;<a href="ravancharles-contact.html" target="_blank">Contact</a>
                 </div>
             </nav>
-    </header>
-    <main>
-        <div id="maintext">
-            <span id="name">Ravan Charles</span>
-            <span id="quote">"But out of limitation comes creativity." <br />-Debbie Allen.</span>
-        </div>
-        <div id="mobilecol">
-            <a href="#"><div class="column" id="one">About</div></a><!--
---><a href="#"><div class="column" id="two">Portfolio</div></a><!--
---><a href="#"><div class="column" id="three">Resume</div></a><!--
---><a href="#"><div class="column" id="four">Contact</div></a>
-        </div>
+    </header><!--
+    --><main>
+            <div id="aboutbody">
+                <div class="column">here</div><!--
+                --><div class="column">there</div><!--
+                --><div class="column">there</div><!--
+                --><div class="column">there</div><!--
+                --><div class="column">there</div><!--
+                --><div class="column">there</div><!--
+                --><div class="column">there</div><!--
+                --><div class="column">there</div>
+            </div>
     </main>
     <script>
     </script>
