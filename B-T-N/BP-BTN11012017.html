@@ -11,7 +11,7 @@
             .navigation {
                 display: inline-block;
                 width: 50vh;
-                height: 15vh;
+                height: 10vh;
                 background-color: yellow;
                 position: absolute;
                 top: 8vh;
@@ -26,7 +26,9 @@
                 color: black;
                 font-size: 25px;
                 vertical-align: text-bottom;
-                line-height: 100%;
+            }
+            a:hover {
+                background-color: (0,0,0,0.5);
             }
             #mobilelogo {
                 display: block;
@@ -49,7 +51,8 @@
                 background-color: orange;
                 padding: 2vw;
             }
-            main {
+          
+            main{ 
                 background-color: limegreen;
             }
             .column {
@@ -61,16 +64,6 @@
                 box-sizing: border-box;
                 padding: 2vw;
             }
-            
-            #one{background-image: url()}
-            #two{}
-            #three{background-image: url()}
-            #four{}
-            #five{background-image: url()}
-            #six{}
-            #seven{background-image: url()}
-            #eight{}
-            
             #footer{
                 height: 10vh;
                 background-color: red;
@@ -157,20 +150,18 @@
                 }
                  .navigation {
                 display: inline-block;
-                
+                vertical-align: middle;
+                line-height: 10vh;
                      
             }
-            a {
-                text-decoration: none;
-                color: black;
-                font-size: 25px;
-                vertical-align: middle;
-                 }
+            
             .column{
                      display: inline-block;
                      width: 50%;
                      height: 25vh;
-                 }   
+                 }
+                 
+                
             }
         </style>
     </head>
@@ -181,22 +172,21 @@
             <div id="desktoplogo"></div>
             <nav class="navigation">
                 <div>
-                    <a href="google.com" target="_blank">About</a> <a href="google.com" target="_blank">About</a> <a href="google.com" target="_blank">About</a> <a href="google.com" target="_blank">About</a>
+                    <a href="google.com" target="_blank">About</a>&nbsp;&nbsp;<a href="google.com" target="_blank">About</a>&nbsp;&nbsp; <a href="google.com" target="_blank">About</a>&nbsp;&nbsp; <a href="google.com" target="_blank">About</a>
                 </div>
             </nav>
         </header>
         
         <main>
-            <div class="column" id="one">Column 1</div><!--
-            --><div class="column" id="two">Column 2</div><!--
-            --><div class="column" id="three">Column 3</div><!--
-            --><div class="column" id="four">Column 4</div><!--
-            --><div class="column" id="five">Column 5</div><!--
-            --><div class="column" id="six">Column 6</div><!--
-            --><div class="column" id="seven">Column 7</div><!--
-            --><div class="column" id="eight">Column 8</div>
+            <div class="column">Column 1</div><!--
+            --><div class="column">Column 2</div><!--
+            --><div class="column">Column 3</div><!--
+            --><div class="column">Column 4</div><!--
+            --><div class="column">Column 5</div><!--
+            --><div class="column">Column 6</div><!--
+            --><div class="column">Column 7</div><!--
+            --><div class="column">Column 8</div>
         </main>
-     
         <footer>
             <div id="footer"></div>
         </footer>
