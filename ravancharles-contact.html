@@ -4,7 +4,6 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
-    
         body {
             margin: 0;
             background: url('https://static.pexels.com/photos/169573/pexels-photo-169573.jpeg');
@@ -13,7 +12,7 @@
             font-family: 'Roboto', sans-serif;
             color: white;
         }
-       
+
         header {
             height: 20vh;
         }
@@ -21,78 +20,80 @@
         main {
             height: 80vh;
         }
-        
+
         .column {
             display: inline-block;
             width: 100%;
             vertical-align: middle;
         }
-    /** this is the media query for mobile**/    
-        @media all and (max-width: 600px){
-        #maintext {
+
+        /** this is the media query for mobile**/
+
+        @media all and (max-width: 600px) {
+            #maintext {
                 display: none;
             }
-        #mobilelogo {
-                    display: block;
-                    margin: auto;
-                    width: 20vw;
-                    height: 10vh;
-                    padding: 2vw; 
-                    margin-top: 2vh;
-                    
+            #mobilelogo {
+                display: block;
+                margin: auto;
+                width: 20vw;
+                height: 10vh;
+                padding: 2vw;
+                margin-top: 2vh;
+
             }
-        #desktoplogo {
-            display: none;
-            }
-        #navigation {
+            #desktoplogo {
                 display: none;
             }
-        .column {
-            display: inline-block;
-            width: 100%;
-            height: 40vh;
+            #navigation {
+                display: none;
             }
-           
-                    
+            .column {
+                display: inline-block;
+                width: 100%;
+                height: 40vh;
+            }
+
+
         }
-        
+
         /** this is the media query for desktop**/
-        
-        @media all and (min-width: 601px){
-            
-             #mobilelogo {
-                 display: none;
+
+        @media all and (min-width: 601px) {
+
+            #mobilelogo {
+                display: none;
             }
             #desktoplogo {
                 display: block;
                 width: 20vw;
                 height: 10vh;
-                padding: 2vw; 
+                padding: 2vw;
             }
             #navigation {
-            display: inline-block;
-            width: 50vh;
-            position: absolute;
-            top: 8vh;
-            left: 70%;
-            text-align: center;
-            padding-right: 2vw;
+                display: inline-block;
+                width: 50vh;
+                position: absolute;
+                top: 8vh;
+                left: 70%;
+                text-align: center;
+                padding-right: 2vw;
             }
             a {
-            display: inline-block;
-            text-decoration: none;
-            font-size: 3vh;
-            vertical-align: text-bottom;
-            line-height: 100%;
-            color: white;
+                display: inline-block;
+                text-decoration: none;
+                font-size: 3vh;
+                vertical-align: text-bottom;
+                line-height: 100%;
+                color: white;
             }
             a:hover {
-            display: inline-block;
-            text-decoration: none;
-            font-size: 3vh;
-            vertical-align: text-bottom;
-            line-height: 100%;
-            background-color: rgba(94,38,119,.5);
+                display: inline-block;
+                text-decoration: none;
+                font-size: 3vh;
+                vertical-align: text-bottom;
+                line-height: 100%;
+                background-color: rgba(94, 38, 119, .5);
             }
             #mobilecol {
                 display: none;
@@ -101,27 +102,36 @@
             .column {
                 display: inline-block;
                 width: 100%;
-                height: 80vh; 
+                height: 80vh;
             }
-            }
+        }
     </style>
 </head>
 
 <body>
     <div id="opaquelayer"></div>
     <header>
-        <div id="mobilelogo"><a href="ravancharles.html"><img src="ravancharleslogo.png"></a></div>
-        <div id="desktoplogo"><a href="#"><img src="ravancharleslogo.png"></a></div>
-            <nav >
-                <div id="navigation">
-                    <a href="ravancharles-about.html" target="_blank">About</a>&nbsp;&nbsp; <a href="ravancharles-portfolio.html" target="_blank">Portfolio</a> &nbsp;&nbsp;<a href="ravancharles-resume.html" target="_blank">Resume</a> &nbsp;&nbsp;<a href="ravancharles-contact.html" target="_blank">Contact</a>
-                </div>
-            </nav>
-    </header><!--
-    --><main>
-            <div id="aboutbody">
-                <div class="column">here</div>
+         <div id="mobilelogo"><a href="ravancharles.html"><img src="ravancharleslogo.png"></a></div>
+        <div id="desktoplogo"><a href="ravancharles.html"><img src="ravancharleslogo.png"></a></div>
+        <nav>
+            <div id="navigation">
+                   <a href="ravancharles-about.html">About</a>&nbsp;&nbsp; <a href="ravancharles-portfolio.html">Portfolio</a> &nbsp;&nbsp;<a href="ravancharles-resume.html">Resume</a> &nbsp;&nbsp;<a href="ravancharles-contact.html">Contact</a>
             </div>
+        </nav>
+    </header>
+    <!--
+    -->
+    <main>
+        <div id="aboutbody">
+            <div class="column">
+                <form id="contactform">
+                Full Name: <input type="text" name="fullname" cols="50" placeholder="please enter your full name"><br />
+                Email: <input type="email" name="email" cols="50" placeholder="please enter your email address"><br />
+                Message: <textarea cols="50" rows="5"></textarea><br />
+                    <input type="button" value="Submit">
+                </form>
+            </div>
+        </div>
     </main>
     <script>
     </script>

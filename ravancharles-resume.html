@@ -4,16 +4,15 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
-    
         body {
             margin: 0;
             background: url('https://static.pexels.com/photos/169573/pexels-photo-169573.jpeg');
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             font-family: 'Roboto', sans-serif;
             color: white;
         }
-       
+
         header {
             height: 20vh;
         }
@@ -21,87 +20,109 @@
         main {
             height: 80vh;
         }
-        
+
         .column {
             display: inline-block;
             width: 100%;
             vertical-align: middle;
         }
-    /** this is the media query for mobile**/    
-        @media all and (max-width: 600px){
-        #maintext {
+
+        /** this is the media query for mobile**/
+
+        @media all and (max-width: 600px) {
+            #maintext {
                 display: none;
             }
-        #mobilelogo {
-                    display: block;
-                    margin: auto;
-                    width: 20vw;
-                    height: 10vh;
-                    padding: 2vw; 
-                    margin-top: 2vh;
-                    
+            #mobilelogo {
+                display: block;
+                margin: auto;
+                width: 20vw;
+                height: 10vh;
+                padding: 2vw;
+                margin-top: 2vh;
+
             }
-        #desktoplogo {
-            display: none;
-            }
-        #navigation {
+            #desktoplogo {
                 display: none;
             }
-        .column {
-            display: inline-block;
-            width: 100%;
-            height: 40vh;
+            #navigation {
+                display: none;
             }
-           
-                    
+            .column {
+                display: inline-block;
+                width: 100%;
+            }
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 3vh;
+                vertical-align: text-bottom;
+                line-height: 100%;
+                color: white;
+            }
+            a:hover {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 3vh;
+                vertical-align: text-bottom;
+                line-height: 100%;
+                background-color: rgba(94, 38, 119, .5);
+
+            }
         }
-        
+
         /** this is the media query for desktop**/
-        
-        @media all and (min-width: 601px){
-            
-             #mobilelogo {
-                 display: none;
+
+        @media all and (min-width: 601px) {
+
+            #mobilelogo {
+                display: none;
             }
             #desktoplogo {
                 display: block;
                 width: 20vw;
                 height: 10vh;
-                padding: 2vw; 
+                padding: 2vw;
             }
             #navigation {
-            display: inline-block;
-            width: 50vh;
-            position: absolute;
-            top: 8vh;
-            left: 70%;
-            text-align: center;
-            padding-right: 2vw;
+                display: inline-block;
+                width: 50vh;
+                position: absolute;
+                top: 8vh;
+                left: 70%;
+                text-align: center;
+                padding-right: 2vw;
             }
             a {
-            display: inline-block;
-            text-decoration: none;
-            font-size: 3vh;
-            vertical-align: text-bottom;
-            line-height: 100%;
-            color: white;
+                display: inline-block;
+                text-decoration: none;
+                font-size: 3vh;
+                vertical-align: text-bottom;
+                line-height: 100%;
+                color: white;
             }
             a:hover {
-            display: inline-block;
-            text-decoration: none;
-            font-size: 3vh;
-            vertical-align: text-bottom;
-            line-height: 100%;
-            background-color: rgba(94,38,119,.5);
+                display: inline-block;
+                text-decoration: none;
+                font-size: 3vh;
+                vertical-align: text-bottom;
+                line-height: 100%;
+                background-color: rgba(94, 38, 119, .5);
             }
             #mobilecol {
                 display: none;
             }
             .column {
                 display: inline-block;
-                width: 50vw;
-                height: 80vh; 
+
             }
+            #download {
+                width: 22.5vw;
+            }
+            #resume {
+                width: 75vw;
+                background-color: rgba(0, 0, 0, .6);
             }
     </style>
 </head>
@@ -109,19 +130,45 @@
 <body>
     <div id="opaquelayer"></div>
     <header>
-        <div id="mobilelogo"><a href="ravancharles.html"><img src="ravancharleslogo.png"></a></div>
-        <div id="desktoplogo"><a href="#"><img src="ravancharleslogo.png"></a></div>
-            <nav >
-                <div id="navigation">
-                    <a href="ravancharles-about.html" target="_blank">About</a>&nbsp;&nbsp; <a href="ravancharles-portfolio.html" target="_blank">Portfolio</a> &nbsp;&nbsp;<a href="ravancharles-resume.html" target="_blank">Resume</a> &nbsp;&nbsp;<a href="ravancharles-contact.html" target="_blank">Contact</a>
-                </div>
-            </nav>
-    </header><!--
-    --><main>
-            <div id="aboutbody">
-                <div class="column">here</div><!--
-                --><div class="column">there</div>
+       <div id="mobilelogo"><a href="ravancharles.html"><img src="ravancharleslogo.png"></a></div>
+        <div id="desktoplogo"><a href="ravancharles.html"><img src="ravancharleslogo.png"></a></div>
+        <nav>
+            <div id="navigation">
+                   <a href="ravancharles-about.html">About</a>&nbsp;&nbsp; <a href="ravancharles-portfolio.html">Portfolio</a> &nbsp;&nbsp;<a href="ravancharles-resume.html">Resume</a> &nbsp;&nbsp;<a href="ravancharles-contact.html">Contact</a>
             </div>
+        </nav>
+    </header>
+    <!--
+    -->
+    <main>
+        <div id="download" class="column">here</div>
+        <!--
+     -->
+        <div id="resume" class="column">
+            <h1>Ravan N Charles</h1>
+            <h2>Experience</h2>
+            <h3><a href="https://www.quantumworkplace.com">Quantum Workplace</a></h3>
+            <h4>Project Manager</h4>
+            <h3><a href="htts://unitedwaymidlands.org">United Way of the Midlands</a></h3>
+            <h4>Manager, Solutions &amp; Continuous Improvement</h4>
+            <h3><a href="https://redbasket.org">Red Basket, Inc.</a></h3>
+            <h4>Account Manager Lead</h4>
+            <h4>Account Manager</h4>
+            <h2>Education</h2>
+            <h3><a href="https://interfaceschool.com">Interface Web School</a></h3>
+            <h3><a href="https://www.creighton.edu/">Creighton University</a></h3>
+            <h2>Tools</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Thing</li>
+                <li>Thing</li>
+                <li>Thing</li>
+            </ul>
+
+
+        </div>
     </main>
     <script>
     </script>
