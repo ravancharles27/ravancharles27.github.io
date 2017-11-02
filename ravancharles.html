@@ -1,53 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body { 
-                margin: 0;
-            }
-            .sections {
-                display: inline-block;  
-                box-sizing: border-box;
-                vertical-align: top;
-            }
-            
-            #one{
-                width:50%;
-                height: 15vh;
-                background-color: black;
-            }
-            #two{
-                width:50%;
-                height: 15vh;
-                background-color: black;
-            }
-            #three{
-                width:75%;
-                height: 70vh;
-                background-color: ghostwhite;
-            }
-            #four{
-                width:25%;
-                height: 70vh;
-                background-color: pink;
-            }
-            #five{
-                width:100%;
-                height: 15vh;
-                background-color: black;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <div id="one" class="sections"></div><!--
-        --><div id="two" class="sections"></div><!--
-        --><div id="three" class="sections"></div><!--
-        --><div id="four" class="sections"></div><!--
-        --><div id="five" class="sections"></div>
-        <script>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+    
+        body {
+            margin: 0;
+            background: url('https://static.pexels.com/photos/169573/pexels-photo-169573.jpeg');
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+       
+        header {
+            height: 20vh;
+        }
+
+        main {
+            height: 80vh;
+        }
         
-        </script>
-    </body>
+        .column {
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            height: 20vh;
+        }
+    /** this is the media query for mobile**/    
+        @media all and (max-width: 600px){
+        #maintext {
+                display: none;
+            }
+        #mobilelogo {
+                    display: block;
+                    margin: auto;
+                    width: 20vw;
+                    height: 10vh;
+                    padding: 2vw; 
+                    margin-top: 2vh;
+                    
+            }
+        #desktoplogo {
+            display: none;
+            }
+        #navigation {
+                display: none;
+            }
+        .column {
+            display: block;
+            text-align: center;
+            line-height: 20vh;
+            font-size: 10vh;
+            color: white;
+            }
+            .column:hover {
+                background-color: rgba(94,38,119,.5);
+            }
+            a {
+                text-decoration: none;
+            }
+                    
+        }
+        
+        /** this is the media query for desktop**/
+        
+        @media all and (min-width: 601px){
+            
+             #mobilelogo {
+                 display: none;
+            }
+            #desktoplogo {
+                display: block;
+                width: 20vw;
+                height: 10vh;
+                padding: 2vw; 
+            }
+            #navigation {
+            display: inline-block;
+            width: 50vh;
+            position: absolute;
+            top: 8vh;
+            left: 70%;
+            text-align: center;
+            padding-right: 2vw;
+            }
+            a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 3vh;
+            vertical-align: text-bottom;
+            line-height: 100%;
+            color: white;
+            }
+            a:hover {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 3vh;
+            vertical-align: text-bottom;
+            line-height: 100%;
+            background-color: rgba(94,38,119,.5);
+            }
+            #mobilecol {
+                display: none;
+            }
+            #maintext{
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+            #name {
+                display: inline-block;
+                font-size: 75px;
+                font-weight: 900;
+            }
+             
+        #quote {
+                display: inline-block;
+                font-size: 25px;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="opaquelayer"></div>
+    <header>
+        <div id="mobilelogo"><a href="#"><img src="ravancharleslogo.png"></a></div>
+        <div id="desktoplogo"><a href="#"><img src="ravancharleslogo.png"></a></div>
+            <nav >
+                <div id="navigation">
+                    <a href="google.com" target="_blank">About</a>&nbsp;&nbsp; <a href="google.com" target="_blank">Portfolio</a> &nbsp;&nbsp;<a href="google.com" target="_blank">Resume</a> &nbsp;&nbsp;<a href="google.com" target="_blank">Contact</a>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div id="maintext">
+            <span id="name">Ravan Charles</span>
+            <span id="quote">"But out of limitation comes creativity." <br />-Debbie Allen.</span>
+        </div>
+        <div id="mobilecol">
+            <a href="#"><div class="column" id="one">About</div></a><!--
+--><a href="#"><div class="column" id="two">Portfolio</div></a><!--
+--><a href="#"><div class="column" id="three">Resume</div></a><!--
+--><a href="#"><div class="column" id="four">Contact</div></a>
+        </div>
+    </main>
+    <script>
+    </script>
+</body>
 
 </html>

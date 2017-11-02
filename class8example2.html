@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            height: 20vh;
+            background-color: blue;
+        }
+
+        main {
+            min-height: 70vh;
+            background-color: green;
+        }
+        
+        .column {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            min-height: 30vh;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 2vw;
+        }
+
+        footer {
+            height: 10vh;
+            background-color: red;
+        }
+        
+        @media all and (min-width: 700px) {
+            .column{
+                width: 50%;
+            }
+        }
+        
+        @media all and (min-width: 1000px) {
+            .column{
+                width: 33.333%;
+            }
+        }
+        
+        @media all and (min-width:1100px)
+        {
+            .column{
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="column">Column 1</div><!--
+        --><div class="column">Column 2</div><!--
+        --><div class="column">Column 3</div><!--
+        --><div class="column">Column 4</div><!--
+         --><div class="column">Column 5</div><!--
+        --><div class="column">Column 6</div><!--
+        --><div class="column">Column 7</div><!--
+        --><div class="column">Column 8</div>
+    </main>
+    <footer></footer>
+    <script></script>
+</body>
+
+</html>

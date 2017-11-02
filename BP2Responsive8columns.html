@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+            header {
+                background-color: pink;
+            }
+            .navigation {
+                display: inline-block;
+                width: 50vh;
+                height: 10vh;
+                background-color: yellow;
+                position: absolute;
+                top: 8vh;
+                left: 70%;
+                text-align: center;
+                transform: (-50%,-50%);
+                
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+                vertical-align: middle;
+            }
+            #mobilelogo {
+                display: block;
+                width: 20vw;
+                height: 10vh;
+                background-color: whitesmoke;
+                padding: 2vw;
+            }
+            #tabletlogo{
+                display: block;
+                width: 20vw;
+                height: 10vh;
+                background-color: yellow;
+                padding: 2vw;
+            }
+            #desktoplogo{
+                display: inline-block;
+                width: 20vw;
+                height: 10vh;
+                background-color: orange;
+                padding: 2vw;
+            }
+          
+            main{ 
+                background-color: limegreen;
+            }
+            .column {
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+                min-height: 20vh;
+                border: 1px solid black;
+                box-sizing: border-box;
+                padding: 2vw;
+            }
+            #footer{
+                height: 10vh;
+                background-color: red;
+            }
+            /**This is the mobile media query**/
+            @media all and (min-width: 200px) {
+                 header {
+                     height: 20vh;
+                 }
+                #mobilelogo {
+                    display: block;
+                    width: 20vw;
+                    height: 10vh;
+                    background-color: whitesmoke;
+                    padding: 2vw; 
+                    position: absolute;
+                    left: 40%;
+                    transform: translate (-50%);
+                    margin-top: 3vh;
+                    
+                }
+                #tabletlogo {
+                    display: none;
+                }
+                #desktoplogo {
+                    display: none;
+                }
+                .navigation {
+                display: none;
+            }
+                .column{
+                     display: inline-block;
+                     width: 100%;
+                 }
+            }
+            /**This is the tablet media query**/
+             @media all and (min-width: 600px) {
+                  header {
+                     height: 20vh;
+                 }
+                 #mobilelogo {
+                    display: none;
+                }
+                #tabletlogo {
+                    display: block;
+                    width: 40vw;
+                    height: 10vh;
+                    background-color: yellow;
+                    padding: 2vw;
+                    position: absolute;
+                    left: 30%;
+                    transform: translate (-50%);
+                    margin-top: 3vh;
+                }
+                #desktoplogo {
+                    display: none;
+                }
+                 .navigation {
+                display: none;
+            }
+                .column{
+                     display: inline-block;
+                     width: 50%;
+                 }
+            }
+            /**This is the desktop media query**/
+             @media all and (min-width: 800px) {
+                 header {
+                     height: 25vh;
+                 }
+                 #mobilelogo {
+                    display: none;
+                }
+                #tabletlogo {
+                    display: none;
+                }
+                #desktoplogo {
+                    display: inline-block;
+                    width: 20vw;
+                    height: 10vh;
+                    background-color: orange;
+                    padding: 2vw;
+                    margin-top: 3vh;
+                }
+                 .navigation {
+                display: inline-block;
+                     
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+                text-align: right;
+                 }
+                .column{
+                     display: inline-block;
+                     width: 50%;
+                 }
+                 
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="mobilelogo"></div>
+            <div id="tabletlogo"></div>
+            <div id="desktoplogo"></div>
+            <nav class="navigation">
+                <div>
+                    <a href="google.com" target="_blank">About</a> <a href="google.com" target="_blank">About</a> <a href="google.com" target="_blank">About</a> <a href="google.com" target="_blank">About</a>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="column">Column 1</div><!--
+            --><div class="column">Column 2</div><!--
+            --><div class="column">Column 3</div><!--
+            --><div class="column">Column 4</div><!--
+            --><div class="column">Column 5</div><!--
+            --><div class="column">Column 6</div><!--
+            --><div class="column">Column 7</div><!--
+            --><div class="column">Column 8</div>
+        </main>
+        <footer>
+            <div id="footer"></div>
+        </footer>
+        <script>
+        </script>
+    </body>
+</html>
