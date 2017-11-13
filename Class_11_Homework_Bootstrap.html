@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <style>
-       
+        body {
+            margin:0;
+        }
     </style>
 </head>
 
@@ -29,15 +31,26 @@
             </ul>
         </div>
     </nav>
-    <!--this is the section 1-->
+    <!--This is the first additional element, an alert-->
+    <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Homework Complete!</h4>
+  <p>I finished the homework as much as I could! A few questions I have&#58;</p>
+  <hr>
+  <ul>
+      <li>How to I removed the break between this alert and the jumbotron?</li>
+      <li>I added a break at the end of the grid section to create white space under the buttons, how else could I accomplish this?</li>
+      <li>In xs when the grid is stacked the elements sit right on top of each other. How could I space them out without impacting the other formats?</li>
+        </ul>
+</div>
+    <!--this is the first jumbotron-->
     <section id="one">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-5">Our Products</h1>
+                <h1 class="display-5">Our Products <span class="badge badge-secondary">New</span></h1>
             </div>
         </div>
     </section>
-    <!--this is the section 2-->
+    <!--this is grid section-->
     <section id="two">
         <div class="container">
             <div class="row">
@@ -47,24 +60,27 @@
                     <button type="button" class="btn btn-success">View Details</button>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <h4>Graphic Design</h4>
+                    <h4>Mobile Apps</h4>
                     <p>Man #3 Good luck tomorrow, Mr. Eastwood! We'll be prayin' for ya! Thanks. Good morning, </p>
                     <button type="button" class="btn btn-success">View Details</button>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <h4>Graphic Design</h4>
+                    <h4>Web Development</h4>
                     <p>Man #3 Good luck tomorrow, Mr. Eastwood! We'll be prayin' for ya! Thanks. Good morning, </p>
                     <button type="button" class="btn btn-success">View Details</button>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <h4>Graphic Design</h4>
+                    <h4>SEO &amp; Marketing</h4>
                     <p>Man #3 Good luck tomorrow, Mr. Eastwood! We'll be prayin' for ya! Thanks. Good morning, </p>
                     <button type="button" class="btn btn-success">View Details</button>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <br />
                 </div>
             </div>
         </div>
     </section>
-    <!--this is the section 3-->
+    <!--this is the second jumbotron-->
     <section id="three">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -81,11 +97,11 @@
                         <input type="email" class="form-control" id="exampleInputName1" aria-describedby="nameField" placeholder="john@email.com">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <label for="exampleFormControlTextarea1">Message</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="button" class="btn btn-success">View Details</button>
+                        <button type="button" class="btn btn-success">Submit</button>
                     </div>
 
                 </form>
